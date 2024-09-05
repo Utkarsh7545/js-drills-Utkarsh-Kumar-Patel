@@ -118,3 +118,4 @@ export const arrayOfObjects = [
 //    Write a function that accesses and prints the names and email addresses of individuals aged 25.
 
 //    Implement a loop to access and log the city and country of each individual in the dataset.
+

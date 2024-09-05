@@ -1,4 +1,4 @@
-//    Given the dataset of individuals, write a function that accesses and returns the email addresses of all individuals.
+//  1  Given the dataset of individuals, write a function that accesses and returns the email addresses of all individuals.
 
 const getEmails = (arrayOfObjects) => {
     const allEmails = [];
@@ -9,7 +9,7 @@ const getEmails = (arrayOfObjects) => {
 }
 
 
-//  Implement a function that retrieves and prints the hobbies of individuals with a specific age, say 30 years old.
+//  2  Implement a function that retrieves and prints the hobbies of individuals with a specific age, say 30 years old.
 
 const getHobbies = (arrayOfObjects) => {
     for(let i=0; i<arrayOfObjects.length; i++){
@@ -20,7 +20,7 @@ const getHobbies = (arrayOfObjects) => {
 }
 
 
-//    Create a function that extracts and displays the names of individuals who are students (isStudent: true) and live in Australia.
+//   3  Create a function that extracts and displays the names of individuals who are students (isStudent: true) and live in Australia.
 
 const getNames = (arrayOfObjects) => {
     for(let i=0; i<arrayOfObjects.length; i++){
@@ -31,14 +31,14 @@ const getNames = (arrayOfObjects) => {
 }
 
 
-//    Write a function that accesses and logs the name and city of the individual at the index position 3 in the dataset.
+//   4  Write a function that accesses and logs the name and city of the individual at the index position 3 in the dataset.
 
 const getName_City = (arrayOfObjects) => {
     console.log(`Name: ${arrayOfObjects[3].name}, City: ${arrayOfObjects[3].city}`);
 }
 
 
-//    Implement a loop to access and print the ages of all individuals in the dataset.
+//   5  Implement a loop to access and print the ages of all individuals in the dataset.
 
 const getAges = (arrayOfObjects) => {
     for(let i=0; i<arrayOfObjects.length; i++){
@@ -47,7 +47,7 @@ const getAges = (arrayOfObjects) => {
 }
 
 
-//    Create a function to retrieve and display the first hobby of each individual in the dataset.
+//   6  Create a function to retrieve and display the first hobby of each individual in the dataset.
 
 const getFirstHobby = (arrayOfObjects) => {
     for (let i = 0; i < arrayOfObjects.length; i++) {
@@ -56,7 +56,7 @@ const getFirstHobby = (arrayOfObjects) => {
 }
 
 
-//    Write a function that accesses and prints the names and email addresses of individuals aged 25.
+//   7  Write a function that accesses and prints the names and email addresses of individuals aged 25.
 
 const getNames_Emails = (arrayOfObjects) => {
     for (let i = 0; i < arrayOfObjects.length; i++) {
@@ -68,13 +68,15 @@ const getNames_Emails = (arrayOfObjects) => {
 }
 
 
-export {getEmails, getHobbies, getNames, getName_City, getAges, getFirstHobby, getNames_Emails };
+//   8  Implement a loop to access and log the city and country of each individual in the dataset.
+
+const getCity_Country = (arrayOfObjects) => {
+    for (let i = 0; i < arrayOfObjects.length; i++) {
+        console.log(`City: ${arrayOfObjects[i].city}, Country: ${arrayOfObjects[i].country}`);
+    }
+}
 
 
-
-
-
-
-
+export {getEmails, getHobbies, getNames, getName_City, getAges, getFirstHobby, getNames_Emails, getCity_Country };
 
 
