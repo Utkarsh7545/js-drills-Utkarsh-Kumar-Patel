@@ -1,6 +1,5 @@
 //    Given the dataset of individuals, write a function that accesses and returns the email addresses of all individuals.
 
-
 const getEmails = (arrayOfObjects) => {
     const allEmails = [];
     for(let i=0; i<arrayOfObjects.length; i++){
@@ -59,11 +58,17 @@ const getFirstHobby = (arrayOfObjects) => {
 
 //    Write a function that accesses and prints the names and email addresses of individuals aged 25.
 
-const getNames_Emails = () => {
-
+const getNames_Emails = (arrayOfObjects) => {
+    for (let i = 0; i < arrayOfObjects.length; i++) {
+        if(arrayOfObjects[i].age === 25){
+            console.log(`Name: ${arrayOfObjects[i].name}, Email: ${arrayOfObjects[i].email}`);
+        }
+        
+    }
 }
 
-export {getEmails, getHobbies, getNames, getName_City, getAges, getFirstHobby };
+
+export {getEmails, getHobbies, getNames, getName_City, getAges, getFirstHobby, getNames_Emails };
 
 
 
