@@ -34,11 +34,20 @@ const getNames = (arrayOfObjects) => {
 //    Write a function that accesses and logs the name and city of the individual at the index position 3 in the dataset.
 
 const getName_City = (arrayOfObjects) => {
-    console.log(arrayOfObjects[3].name + " " + arrayOfObjects[3].city);
+    console.log(`Name: ${arrayOfObjects[3].name}, City: ${arrayOfObjects[3].city}`);
 }
 
 
-export {getEmails, getHobbies,getNames, getName_City };
+//    Implement a loop to access and print the ages of all individuals in the dataset.
+
+const getAges = (arrayOfObjects) => {
+    for(let i=0; i<arrayOfObjects.length; i++){
+        console.log(arrayOfObjects[i].age);
+    }
+}
+
+
+export {getEmails, getHobbies,getNames, getName_City, getAges };
 
 
 
