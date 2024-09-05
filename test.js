@@ -1,7 +1,6 @@
 import { arrayOfObjects } from "./persons.js";
 import { getEmails, getHobbies, getNames, getAges, getCity_Country, getFirstHobby, getName_City, getNames_Emails } from "./solution.js";
 
-console.log("1:");
 
 const func1 = () => {
     console.log(getEmails(arrayOfObjects));
@@ -10,67 +9,60 @@ const func1 = () => {
     console.log(getEmails("utkarsh"));
 }
 
-console.log("2:");
 
 const func2 = () => {
-    console.log(getHobbies(arrayOfObjects, 30));
-    console.log(getHobbies(arrayOfObjects, 0));   
-    console.log(getHobbies([], 45));        
-    console.log(getHobbies('c', 10));
+    getHobbies(arrayOfObjects, 30);
+    getHobbies(arrayOfObjects, 10);   
+    getHobbies([], 45);        
+    getHobbies('c', 10);
 }
 
-console.log("3:");
 
 const func3 = () => {
-    console.log(getNames(arrayOfObjects));
-    console.log(getNames("&$_"));
-    console.log(getNames(54.12));
-    console.log(getNames({}));
+    getNames(arrayOfObjects);
+    getNames("&$_");
+    getNames(54.12);
+    getNames({});
 }
 
-console.log("4:");
 
 const func4 = () => {
-    console.log(getName_City(arrayOfObjects));
-    console.log(getName_City([]));
-    console.log(getName_City(0));
-    console.log(getName_City("amit"));
+    getName_City(arrayOfObjects);
+    getName_City([]);
+    getName_City(0);
+    getName_City("amit");
 }
 
-console.log("5:");
 
 const func5 = () => {
-    console.log(getAges(arrayOfObjects));
-    console.log(getAges("011562"));
-    console.log(getAges(101));
-    console.log(getAges([]));
+    getAges(arrayOfObjects);
+    getAges("011562");
+    getAges(101);
+    getAges([]);
 }
 
-console.log("6:");
 
 const func6 = () => {
-    console.log(getFirstHobby(arrayOfObjects));
-    console.log(getFirstHobby("hello"));
-    console.log(getFirstHobby(2679.12));
-    console.log(getFirstHobby([]));
+    getFirstHobby(arrayOfObjects);
+    getFirstHobby("hello");
+    getFirstHobby(2679.12);
+    getFirstHobby([]);
 }
 
-console.log("7:");
 
 const func7 = () => {
-    console.log(getNames_Emails(arrayOfObjects));
-    console.log(getNames_Emails(0.2456));
-    console.log(getNames_Emails([]));
-    console.log(getNames_Emails("thank you"));
+    getNames_Emails(arrayOfObjects);
+    getNames_Emails(0.2456);
+    getNames_Emails([]);
+    getNames_Emails("thank you");
 }
 
-console.log("8:");
 
 const func8 = () => {
-    console.log(getCity_Country(arrayOfObjects));
-    console.log(getCity_Country('hii'));
-    console.log(getCity_Country(24.236));
-    console.log(getCity_Country([]));
+    getCity_Country(arrayOfObjects);
+    getCity_Country('hii');
+    getCity_Country(24.236);
+    getCity_Country([]);
 }
 
 
