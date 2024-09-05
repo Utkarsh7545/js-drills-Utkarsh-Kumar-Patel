@@ -1,6 +1,5 @@
 //    Given the dataset of individuals, write a function that accesses and returns the email addresses of all individuals.
 
-import { arrayOfObjects } from "./persons";
 
 const getEmails = (arrayOfObjects) => {
     const allEmails = [];
@@ -57,6 +56,12 @@ const getFirstHobby = (arrayOfObjects) => {
     }
 }
 
+
+//    Write a function that accesses and prints the names and email addresses of individuals aged 25.
+
+const getNames_Emails = () => {
+
+}
 
 export {getEmails, getHobbies, getNames, getName_City, getAges, getFirstHobby };
 
