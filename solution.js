@@ -1,6 +1,3 @@
-import { arrayOfObjects } from "./persons";
-
-
 //    Given the dataset of individuals, write a function that accesses and returns the email addresses of all individuals.
 
 const getEmails = (arrayOfObjects) => {
@@ -23,10 +20,18 @@ const getHobbies = (arrayOfObjects, ag) => {
 }
 
 
+//    Create a function that extracts and displays the names of individuals who are students (isStudent: true) and live in Australia.
+
+const getNames = (arrayOfObjects) => {
+    for(let i=0; i<arrayOfObjects.length; i++){
+        if((arrayOfObjects[i].isStudent) && arrayOfObjects[i].country === "Australia"){
+            console.log(arrayOfObjects[i].name);
+        }
+    }
+}
 
 
-
-export {getEmails, getHobbies };
+export {getEmails, getHobbies,getNames };
 
 
 
