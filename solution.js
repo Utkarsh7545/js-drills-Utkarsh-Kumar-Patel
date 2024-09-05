@@ -31,7 +31,14 @@ const getNames = (arrayOfObjects) => {
 }
 
 
-export {getEmails, getHobbies,getNames };
+//    Write a function that accesses and logs the name and city of the individual at the index position 3 in the dataset.
+
+const getName_City = (arrayOfObjects) => {
+    console.log(arrayOfObjects[3].name + " " + arrayOfObjects[3].city);
+}
+
+
+export {getEmails, getHobbies,getNames, getName_City };
 
 
 
