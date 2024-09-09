@@ -31,4 +31,7 @@ console.log(filter(items, (element) => {
     return element > 2;
 }));
 
+// 6:
+
+console.log(flatten(nestedArray));
 

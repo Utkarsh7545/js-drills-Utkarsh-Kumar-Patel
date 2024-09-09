@@ -63,8 +63,15 @@ export function filter(elements, cb) {
 export const nestedArray = [1, [2], [[3]], [[[4]]]]; // use this to test 'flatten'
 
 export function flatten(elements) {
-  // Flattens a nested array (the nesting can be to any depth).
-  // Hint: You can solve this using recursion.
-  // Example: flatten([1, [2], [3, [[4]]]]); => [1, 2, 3, 4];
+    let arr = [];
+    for (let i = 0; i < elements.length; i++) {
+        if(Array.isArray(elements[i])){
+            arr = arr.concat(flatten(elements[i]));
+        }
+        else{
+            arr.push(elements[i]);
+        }
+    }
+    return arr;
 }
 
