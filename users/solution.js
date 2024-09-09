@@ -15,6 +15,7 @@ const checkInterest = (data) => {
     }
 }
 
+
 // Q2 Find all users staying in Germany.
 
 const checkNationality = (data) => {
@@ -33,5 +34,35 @@ const checkNationality = (data) => {
 }
 
 
-export { checkInterest, checkNationality};
+// Q3 Find all users with masters Degree.
+
+const checkQualification = (data) => {
+    if(!data || typeof data !== 'object' || Object.keys(data).length === 0){
+        return "Invalid Data";
+    }
+    else{
+        const arr = [];
+        for(let user in data){
+            if((data[user].qualification) && data[user].qualification.includes("Masters")){
+                arr.push(user);
+            }
+        }
+        return arr;
+    }
+}
+
+
+// Q4 Group users based on their Programming language mentioned in their designation.
+
+const checkDesignation = (data) => {
+    if(!data || typeof data !== 'object' || Object.keys(data).length === 0){
+        return "Invalid Data";
+    }
+    else{
+        const 
+    }
+}
+
+
+export { checkInterest, checkNationality, checkQualification, checkDesignation };
 
