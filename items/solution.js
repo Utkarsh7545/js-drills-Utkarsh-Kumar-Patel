@@ -12,3 +12,9 @@ map(items, (element, index) => {
     console.log(`${index} : ${element * 10}`);
 });
 
+// 3:
+
+console.log(reduce(items, (acc, element) => {
+    return acc *= element;
+}, 1));
+
