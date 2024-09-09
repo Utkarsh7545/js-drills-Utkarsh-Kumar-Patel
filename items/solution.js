@@ -1,5 +1,6 @@
 import { items, each, map, reduce, find, filter, nestedArray, flatten } from "./items.js";
 
+
 // 1:
 
 each(items, (element, index) => {
@@ -17,4 +18,17 @@ map(items, (element, index) => {
 console.log(reduce(items, (acc, element) => {
     return acc *= element;
 }, 1));
+
+// 4:
+
+console.log(find(items, (element) => {
+    return element > 4;
+}));
+
+// 5:
+
+console.log(filter(items, (element) => {
+    return element > 2;
+}));
+
 
