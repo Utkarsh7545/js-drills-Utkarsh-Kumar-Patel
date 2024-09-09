@@ -44,4 +44,27 @@ const carModels = (data) => {
     }
 }
 
-export { carInfo, lastCarInfo, carModels };
+
+// ==== Problem #4 ====
+// The accounting team needs all the years from every car on the lot. Execute a function that will return an array from the dealer data containing only the car years and log the result in the console as it was returned.
+
+const carYears = (data) => {
+    if(!data || !Array.isArray(data) || data.length === 0){
+        return "Invalid Data";
+    }
+    else{
+        let arr = [];
+        for(let i=0; i<data.length; i++){
+            arr.push(data[i].car_year);
+        }
+        return arr;
+    }
+}
+
+
+// ==== Problem #5 ====
+// The car lot manager needs to find out how many cars are older than the year 2000. Using the array you just obtained from the previous problem, find out how many cars were made before the year 2000 and return the array of older cars and log its length.
+
+
+
+export { carInfo, lastCarInfo, carModels, carYears };

@@ -1,5 +1,5 @@
 import { inventory } from "./cars.js";
-import { carInfo, lastCarInfo, carModels } from "./solution.js";
+import { carInfo, lastCarInfo, carModels, carYears } from "./solution.js";
 
 const func1 = ( ) => {
     console.log(carInfo(inventory));
@@ -22,8 +22,19 @@ const func3 = () => {
     console.log(carModels([]));
 }
 
+const func4 = () => {
+    console.log(carYears(inventory));
+    console.log(carYears("inventory"));
+    console.log(carYears('inventory'));
+    console.log(carYears(402.301));
+}
 
+const func5 = () => {
+    console.log();
+}
 
 func1();
 func2();
 func3();
+func4();
+func5();
