@@ -81,4 +81,26 @@ const olderCars = (data) => {
     }
 }
 
-export { carInfo, lastCarInfo, carModels, carYears, olderCars };
+
+// ==== Problem #6 ====
+// A buyer is interested in seeing only BMW and Audi cars within the inventory.  Execute a function and return an array that only contains BMW and Audi cars.  Once you have the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+
+const bmwAndAudi = (data) => {
+    if(!data || !Array.isArray(data) || data.length === 0){
+        return "Invalid Data";
+    }
+    else{
+        let arr = [];
+        for(let i=0; i<data.length; i++){
+            if(data[i].car_make === "Audi" || data[i].car_make === "BMW"){
+                arr.push(`${data[i].car_make} ${data[i].car_model} ${data[i].car_year}`);
+            }
+        }
+        console.log(JSON.stringify(arr));
+        return arr;
+    }
+}
+
+
+export { carInfo, lastCarInfo, carModels, carYears, olderCars, bmwAndAudi };
+
