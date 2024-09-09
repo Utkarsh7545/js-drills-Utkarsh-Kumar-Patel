@@ -18,6 +18,30 @@ const carInfo = (data) => {
 // ==== Problem #2 ====
 // The dealer needs the information on the last car in their inventory. Execute a function to find what the make and model of the last car in the inventory is?  Log the make and model into the console.
 
+const lastCarInfo = (data) => {
+    if(!data || !Array.isArray(data) || data.length === 0){
+        return "Invalid Data";
+    }
+    else{
+        return `Last car is a ${data[data.length-1].car_make} ${data[data.length-1].car_model}`;
+    }
+}
 
 
-export { carInfo };
+// ==== Problem #3 ====
+// The marketing team wants the car models listed alphabetically on the website. Execute a function to Sort all the car model names into alphabetical order and log the results in the console as it was returned.
+
+const carModels = (data) => {
+    if(!data || !Array.isArray(data) || data.length === 0){
+        return "Invalid Data";
+    }
+    else{
+        let arr = [];
+        for(let i=0; i<data.length; i++){
+            arr.push(data[i].car_model);
+        }
+        return arr.sort();
+    }
+}
+
+export { carInfo, lastCarInfo, carModels };
