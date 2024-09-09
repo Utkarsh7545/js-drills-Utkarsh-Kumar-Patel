@@ -59,7 +59,27 @@ const checkDesignation = (data) => {
         return "Invalid Data";
     }
     else{
-        const 
+        const obj = {
+            Java : [],
+            Python : [],
+            Golang : [],
+            JavaScript : []
+        };
+        for (let user in data) {
+            if((data[user].designation) && data[user].designation.includes("Golang")){
+                obj.Golang.push(user);
+            }
+            else if((data[user].designation) && data[user].designation.includes("Javascript")){
+                obj.JavaScript.push(user);
+            }
+            else if((data[user].designation) && data[user].designation.includes("Python")){
+                obj.Python.push(user);
+            }
+            else{
+                obj.Java.push(user);
+            }
+        }
+        return obj;
     }
 }
 
