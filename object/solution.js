@@ -8,5 +8,7 @@ console.log(mapObject(testObject, (value) => typeof value === 'number' ? value +
 
 console.log(pairs(testObject));
 
+console.log(invert(testObject));
+
 
 
