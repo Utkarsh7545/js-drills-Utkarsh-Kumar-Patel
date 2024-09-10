@@ -15,5 +15,11 @@ for(let i=0; i<9; i++){
 
 // 3:
 
+const z = cacheFunction((data) => data * 10);
 
+console.log(z(10));
+console.log(z(100));
+console.log(z(10));
+console.log(z(1000));
+console.log(z(10));
 
