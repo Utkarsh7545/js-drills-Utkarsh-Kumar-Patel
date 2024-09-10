@@ -31,8 +31,11 @@ export function mapObject(obj, cb) {
 }
 
 export function pairs(obj) {
-  // Convert an object into a list of [key, value] pairs.
-  // http://underscorejs.org/#pairs
+  const list = [];
+  for(let key in obj){
+    list.push([key, obj[key]]);
+  }
+  return list;
 }
 
 /* STRETCH PROBLEMS */

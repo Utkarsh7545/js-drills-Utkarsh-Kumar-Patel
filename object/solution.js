@@ -6,3 +6,7 @@ console.log(values(testObject));
 
 console.log(mapObject(testObject, (value) => typeof value === 'number' ? value + value : value + " " + value));
 
+console.log(pairs(testObject));
+
+
+
