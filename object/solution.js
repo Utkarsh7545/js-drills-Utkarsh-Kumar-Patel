@@ -10,5 +10,5 @@ console.log(pairs(testObject));
 
 console.log(invert(testObject));
 
-
+console.log(defaults(testObject, {age: 20, weight: "70 kg", height: "6'0 feet"}));
 
